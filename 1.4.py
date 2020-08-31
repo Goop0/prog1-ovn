@@ -1,6 +1,7 @@
 
 
-name = input("vad heter du?")
-print('Hej', name)
-name = input('vad har du i handen?',name)
-print2('hejdå',name)
+name = input ('vad heter du?')
+
+surname = input('vad är ditt efternamn?')
+
+print ('Hej', name,surname)
