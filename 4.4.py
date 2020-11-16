@@ -1,9 +1,12 @@
-starthöjd = int(input('skriv en höjd i m '))
-förlust = 0.7
-höjd = starthöjd
+meter = 1
+while meter > 0:
+    meter = int(input('skriv en höjd i m '))
+    
+    centimeter = 100 * meter
+    studsar = 0
 
-while höjd > 0.01:
-    höjd = höjd * förlust
-    studsar = starthöjd/höjd
-    studsar=int(studsar)
-print(f'boll blir täckt efter {studsar} studsar')
+    while centimeter > 1:
+        centimeter = centimeter * 0.7
+        studsar += 1
+    print(f'boll blir täckt efter {studsar} studsar')
+print('hejdå')
